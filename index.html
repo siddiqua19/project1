@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    .checkbox {
+      margin-bottom: 10px;
+      display:inline-block;
+    }
+    .signin-button {
+      background-color: rgb(71, 70, 70);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: block;
+      width: 100%;
+    }
+    .signin-button:hover {
+      background-color: black;
+    }
+    .google-button {
+      background-color: white;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: block;
+      width: 100%;
+      border: #000;
+    }
+    .google-button:hover {
+      background-color:  rgb(71, 70, 70);
+      border: #000;
+    }
+    .container{
+        border: none;
+        float: left;
+        display: inline-block;
+        
+    }
+     img {
+        float: right;
+        display: inline-block;
+    }
+    .center{
+             position: relative;
+           top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 29vw;
+  background: white;
+  border-radius: 10px;
+}
+.container{
+        
+        border: 3px solid rgb(246, 248, 248);
+        height: 550px;
+        float: right;
+        width: 150px; 
+        background-color: white;
+         text-align: left; 
+        margin: 20px 0px;
+        padding: 47px 174px;
+        color: #756c6c;
+        margin-right: -0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px  }
+  </style>
+</head>
+<body>
+    <img src="shoe.png" alt="shoe">
+    <div class="container">
+        <div class="center">
+
+            <form action="/signup" method="post">
+              <h2>Welcome Back</h2>
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" placeholder="Enter your email" required>
+          
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          
+              <div class="checkbox">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+                <p><a href="/forgot-password">Forgot Password?</a></p>
+              </div>
+          
+              
+          
+        
+              <button type="button" class="signin-button">Sign In</button>
+              <button type="button" class="google-button">Sign In with Google</button>
+              <div class="signup-link">
+                  Don't have an account? <a href="/signup">Sign Up</a>
+                </div>
+            </form>
+        </div>
+        
+
+    </div>
+</body>
+</html>
